@@ -1,0 +1,56 @@
+
+.reward-box{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    background: url('../assets/share-lists.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    .face{
+        margin-left: 30px;
+        width: 80px;
+        height: 80px;
+    }
+    .name-box{
+        margin-left: 10px;
+        .name{
+            display: -webkit-box;
+            width: 140px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            font-weight: 600;
+        }
+        .time{
+            font-size: 20px;
+            color: #888;
+        }
+        .mark{
+            font-size: 22px;
+            color: #888;
+        }
+    }
+    .reward-num-box{
+        position: absolute;
+        right: 3%;
+        padding: 0 10px;
+        border-radius: 16px;
+        background: red;
+        color: #fff;
+
+    }
+    
+}
+.reward-single{
+    background: url('../assets/share-list.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    .face{
+        width: 100px;
+        height: 100px;
+    }
+}

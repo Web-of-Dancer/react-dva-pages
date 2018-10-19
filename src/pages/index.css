@@ -1,0 +1,24 @@
+#root{
+  max-width: 1500px;
+  margin: auto;
+  background: #ebebeb;
+
+}
+p,h1,h2,h3,h4,a{
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-size: 28px;
+}
+html, body, :global(#root) {
+  height: 100%;
+  font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-box{
+  overflow: auto;
+  -webkit-overflow-scrolling : touch;
+}

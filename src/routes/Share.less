@@ -1,0 +1,139 @@
+.share-box{
+    font-size: 24px;
+    background: #e73a34;
+    padding-bottom: 20px; 
+    img{
+        width: 100%;
+    }
+    .share-head{
+        position: relative;
+        width: 100%;
+        .rule{
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: url('../assets/share-rule.png') no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+       
+    }
+    .see-reward{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        a{
+            display: block;
+            width: 454px;
+            height: 120px;
+            background: url('../assets/share-btn.png') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .centent{
+        margin: 0 40px;
+        .block{
+            background: #ffeddf;
+            border-radius: 20px;
+            padding: 30px;
+        }
+        .cut-off-line{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #787878;
+            position: relative;
+        }
+        .cut-off-line::before{
+            position: absolute;
+            left: 0;
+            width: 120px;
+            content: '';
+            border: 0.8px solid #787878;
+        }
+        .cut-off-line::after{
+            position: absolute;
+            right: 0;
+            width: 120px;
+            content: '';
+            border: 0.8px solid #787878;
+        }
+       
+        .line{
+            display: block;
+            height: 20px;
+            margin: 14px 20px;
+            background: url('../assets/share-line.png') no-repeat;
+            background-size: 100% 100%;
+
+        }
+        .title{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card-box{
+            position: relative;
+            .card{
+                position: absolute;
+                width: 56%;
+                top: 32%;
+                left: 24%;
+            }
+        }
+
+    }
+
+    .btm{
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .red-packet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.7);
+        img{
+            width: 50%;
+        }
+    }
+   
+}
+
+ 
+/* iphone4 */
+ 
+@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2){
+    .share-box .btm{
+        font-size: 12px;
+    }
+    .share-box .see-reward a{
+        width: 364px;
+         height: 96px;
+    }
+}
+ 
+/* iphone5 */
+ 
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+    .share-box .btm{
+        font-size: 12px;
+    }
+    .share-box .see-reward a{
+        width: 364px;
+         height: 96px;
+    }
+ 
+ 
+}

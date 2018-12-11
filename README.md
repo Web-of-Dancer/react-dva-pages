@@ -1,4 +1,4 @@
-# react-dva-pages
+# react-mobile-pages
 react+dva配置多页面移动端项目
 ## 配置多文件入口
 - .roadhogrc.js 文件修改 entry: "/src/pages/*.js"

@@ -1,5 +1,5 @@
 #root{
-  max-width: 1500px;
+  max-width: 1125px;
   margin: auto;
   background: #ebebeb;
 
@@ -21,4 +21,10 @@ html, body, :global(#root) {
 .scroll-box{
   overflow: auto;
   -webkit-overflow-scrolling : touch;
+}
+a{
+  border:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+  outline:none；
 }

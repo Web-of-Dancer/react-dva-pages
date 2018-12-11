@@ -10,19 +10,14 @@ import { getItem, setItem } from '../utils/cookie';
 import queryString from '../utils/getQueryStr';
 import './IndexPage.less';
 
-import H5 from '../assets/H5.jpg';
 /*******系统头像 */
-import face1 from '../assets/icon_001.png';
-import face2 from '../assets/icon_002.png';
-import face3 from '../assets/icon_003.png';
-import face4 from '../assets/icon_004.png';
-import face5 from '../assets/icon_005.png';
-import face6 from '../assets/icon_006.png';
+
 /*******系统头像 */
 const { type, veToken } = queryString();
 if(type == 0){
   window.location.replace('#/error');
 }
+
 class IndexPage extends React.Component {
   constructor() {
     super();
@@ -36,46 +31,15 @@ class IndexPage extends React.Component {
 
   }
   componentDidMount() {
-    getUserInfo({ veToken })
-      .then(({ success, data }) => {
-        if (success) {
-          let { originNickName, originImg } = data;
-          switch(originImg){
-            case '1':
-            originImg = face1
-            break;
-            case '2':
-            originImg = face2
-            break;
-            case '3':
-            originImg = face3
-            break;
-            case '4':
-            originImg = face4
-            break;
-            case '5':
-            originImg = face5
-            break;
-            case '6':
-            originImg = face6
-            break;
-          }
-          this.setState({
-            originNickName,
-            originImg
-          })
-        }
 
-      })
   }
   render() {
     const { originNickName, originImg, type, visible } = this.state;
     return (
-      <div >
         <div className="pull-new">
-          <Header ref={el => this.nav = el} info={{ originNickName, originImg }} />
+          {/* <Header ref={el => this.nav = el} info={{ originNickName, originImg }} /> */}
+          <a className="rule-btn" onClick={()=>this.setState({visible:true})}></a>
           <div className="ad-box">
-            <img src={H5} />
             <p className="btn-receive">
               {
                 type == '1' ?
@@ -96,27 +60,21 @@ class IndexPage extends React.Component {
                   null
               }
             </p>
-            <a href="//miguabisai.com" className="download-game">
-              下载游戏
-            </a>
-            <div className="icon-box">
+            <a href="//ypy.lazyertech.com" className="download-game"></a>
+            {/* <div className="icon-box">
               <i></i><span>觅呱游戏</span>
-            </div>
+            </div> */}
           </div>
-        </div>
-        {
+          {
           visible ? 
           <OpenBrowser onClick={()=>this.setState({visible:false})}/>
           :
           null
         }
         
-        <Footer />
-      </div>
+        {/* <Footer /> */}
+        </div>
     );
   }
 }
-
-
-
 export default IndexPage;

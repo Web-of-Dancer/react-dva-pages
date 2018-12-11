@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import './Header.less';
-import headFace from '../assets/logo.png';
 class Header extends React.Component {
     render() {
         const { className, style, info } = this.props;
@@ -12,7 +11,7 @@ class Header extends React.Component {
         return (
             <div className={"header " + className} style={style}>
                 <div className="head-face">
-                    <img src={originImg ? originImg : headFace} />
+                    <img src={originImg} />
                     <div className="">
                         <p className="nick-name">{originNickName}</p>
                         <div className="head-msg">

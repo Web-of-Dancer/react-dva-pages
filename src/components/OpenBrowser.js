@@ -4,13 +4,12 @@
  */
 import React from 'react';
 import './Footer.less';
-import browser from '../assets/open_browser.jpg';
-
+const Rule = 'http://ypy.lazyertech.com/activityShare/pullnew-rule.jpg'
 class OpenBrowser extends React.Component{
     render(){
         const { style, onClick } = this.props;
         return(
-            <img  onClick={onClick} src={browser} style={{width:'100VW',height:'100VH',position: 'fixed',top:0,left:0}}/>
+            <img  onClick={onClick} src={Rule} style={{width:'100VW',height:'100VH',position: 'fixed',top:0,left:0}}/>
         )
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Download.less';
-import BG from '../assets/bg.jpg'
+const BG  =  'http://ypy.lazyertech.com/activityShare/download-bg.jpg'
 class Download extends React.Component {
     constructor(props){
         super();

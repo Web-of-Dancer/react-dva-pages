@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import Header from '../components/Header';
-import NotFundImg from '../assets/error.png';
+const NotFundImg = "http://ypy.lazyertech.com/activityShare/error.png";
 class NotFund extends React.Component {
     constructor(){
         super();

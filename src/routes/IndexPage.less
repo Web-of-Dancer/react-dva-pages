@@ -1,10 +1,26 @@
 .pull-new {
+    width: 100%;
     height: 100%;
-    position: relative;
-    padding: 0 40px;
-    font-size: 28px;
-    background: #ebebeb;
+    position: absolute;
+    // padding: 0 40px;
+    // font-size: 28px;
+    // background: #ebebeb;
+    background: url("http://ypy.lazyertech.com/activityShare/pullnew-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    .rule-btn{
+        display: block;
+        width: 99px;
+        height: 28px;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background: url("http://ypy.lazyertech.com/activityShare/pullnew-rule-btn.png") no-repeat;
+        background-size: 100% 100%;
+    }
     .ad-box {
+        width: 100%;
+        position: absolute;
+        bottom: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,15 +33,11 @@
         }
     }
     .btn-receive {
-        font-size: 38px;
-        font-weight: 550;
+        color: #fff;
+        font-size: 30px;
+        // font-weight: 550;
         margin-top: 40px;
         margin-bottom: 20px;
-    }
-    a {
-        color: #777;
-        text-decoration: none;
-        margin-bottom: 40px;
     }
     .icon-box {
         display: flex;
@@ -34,7 +46,7 @@
             display: inline-block;
             width: 80px;
             height: 80px;
-            background-image: url('../assets/icon.png');
+            background-image: url('http://ypy.lazyertech.com/activityShare/icon.png');
             background-size: cover;
         }
         span {
@@ -47,11 +59,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 400px;
-        height: 80px;
-        color: #fff;
-        font-size: 40px;
-        background: #a30f0f;
-        border-radius: 40px;
+        width: 296px;
+        height: 75px;
+        background: url("http://ypy.lazyertech.com/activityShare/now-download.png") no-repeat;
+        background-size: 100% 100%;
     }
 }
